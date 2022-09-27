@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else{
-                    Toast.makeText(getApplicationContext(),"登入失敗",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"登入失敗",Toast.LENGTH_LONG).show();//
                 }
 
             }
