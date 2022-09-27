@@ -71,7 +71,7 @@ public class userActivity extends AppCompatActivity {
         super.onPause();
         Log.i("log","onPause");
         mp.pause();
-    }//
+    }
 
     @Override
     protected void onResume() {
