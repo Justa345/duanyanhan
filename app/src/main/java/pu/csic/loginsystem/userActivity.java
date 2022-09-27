@@ -53,7 +53,7 @@ public class userActivity extends AppCompatActivity {
                 data.putString("key","mydata");
                 it.putExtras(data);
                 setResult(1000,it);
-                finish();
+                finish();//
             }
         });
     }
