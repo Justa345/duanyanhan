@@ -77,6 +77,6 @@ public class userActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.i("log", "onResume");
-        mp.start();//
+        mp.start();
     }
 }
