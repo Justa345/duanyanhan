@@ -63,7 +63,7 @@ public class userActivity extends AppCompatActivity {
         super.onStop();
         Log.i("log", "onStop");
         mp.stop();
-    }
+    }//
 
 
     @Override
