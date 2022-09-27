@@ -55,7 +55,7 @@ public class userActivity extends AppCompatActivity {
                 setResult(1000,it);
                 finish();
             }
-        });
+        });//
     }
 
     @Override
