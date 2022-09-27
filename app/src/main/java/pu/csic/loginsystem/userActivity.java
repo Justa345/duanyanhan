@@ -29,7 +29,7 @@ public class userActivity extends AppCompatActivity {
         dialbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri  phone = Uri.parse("tel://123456");
+                Uri  phone = Uri.parse("tel://1256");
                 Intent it = new Intent(Intent.ACTION_DIAL,phone);
                 startActivity(it);
             }
