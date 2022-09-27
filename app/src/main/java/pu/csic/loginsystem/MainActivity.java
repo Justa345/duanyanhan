@@ -1,5 +1,6 @@
 package pu.csic.loginsystem;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -23,15 +24,23 @@ public class MainActivity extends AppCompatActivity {
                 EditText pw = findViewById(R.id.pw);
                 if((name.getText().toString().equals("james"))&&
                         (pw.getText().toString().equals("pw"))){
-                    Toast.makeText(getApplicationContext(),"成功了",Toast.LENGTH_LONG).show();
+                    Bundle data = new Bundle();
+                    data.putString("account", name.getText().toString());
+                    data.putInt("age",24);
+
                     Intent it = new Intent(getApplicationContext(),userActivity.class);
-                    startActivity(it);
+                    it.putExtras(data);
+                    startActivityForResult(it,1000);
+                    Toast.makeText(getApplicationContext(),"成功",Toast.LENGTH_LONG).show();
                 }
+
                 else{
                     Toast.makeText(getApplicationContext(),"登入失敗",Toast.LENGTH_LONG).show();
                 }
 
             }
+
         });
     }
+
 }
