@@ -64,7 +64,7 @@ public class userActivity extends AppCompatActivity {
         Log.i("log", "onStop");
         mp.stop();
     }
-////////////
+
 
     @Override
     protected void onPause() {
