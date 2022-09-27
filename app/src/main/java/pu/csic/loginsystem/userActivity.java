@@ -53,7 +53,7 @@ public class userActivity extends AppCompatActivity {
                 data.putString("key","mydata");
                 it.putExtras(data);
                 setResult(1000,it);
-                finish();//
+                finish();
             }
         });
     }
@@ -73,10 +73,4 @@ public class userActivity extends AppCompatActivity {
         mp.pause();
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i("log", "onResume");
-        mp.start();
-    }
 }
