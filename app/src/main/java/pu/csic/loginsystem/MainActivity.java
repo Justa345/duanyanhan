@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText pw = findViewById(R.id.pw);
                 if((name.getText().toString().equals("james"))&&
                         (pw.getText().toString().equals("pw"))){
-                    Toast.makeText(getApplicationContext(),"成功",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"成功了",Toast.LENGTH_LONG).show();
                     Intent it = new Intent(getApplicationContext(),userActivity.class);
                     startActivity(it);
                 }
