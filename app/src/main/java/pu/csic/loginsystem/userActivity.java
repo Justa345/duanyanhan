@@ -64,13 +64,19 @@ public class userActivity extends AppCompatActivity {
         Log.i("log", "onStop");
         mp.stop();
     }
-
+////////////
 
     @Override
     protected void onPause() {
         super.onPause();
         Log.i("log","onPause");
         mp.pause();
-    }
+    }//
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("log", "onResume");
+        mp.start();
+    }
 }
