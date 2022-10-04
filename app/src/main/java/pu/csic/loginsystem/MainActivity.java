@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button btn = findViewById(R.id.login);
         btn.setOnClickListener(new View.OnClickListener() {
-            @Override//
+            @Override
             public void onClick(View view) {
                 EditText name = findViewById(R.id.post);
                 EditText pw = findViewById(R.id.pw);
